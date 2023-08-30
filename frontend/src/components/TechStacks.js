@@ -11,15 +11,21 @@ import {
   gitIcon,
   googlecloudIcon,
   dockerIcon,
-  javascriptIcon
+  javascriptIcon,
 } from "./TechStackIcons";
+import { Container } from "react-bootstrap";
 
-function TechStacks(){
-    return(
-        <>
-        {html5Icon}
+function TechStacks() {
+  return (
+    <Container style={{backgroundColor:'coral'}}>
+      <Container
+        className="d-flex justify-content-center align-items-center"
+        style={{ height: "100px" }}
+      >
+        <h2>Tech Stacks(바디2)</h2>
+      </Container>
+      <Container className="d-flex justify-content-center align-items-center">
         {javascriptIcon}
-        {typescriptIcon}
         {mySQLIcon}
         {nodejsIcon}
         {reactIcon}
@@ -29,8 +35,9 @@ function TechStacks(){
         {dockerIcon}
         {googlecloudIcon}
         {bootstrap5Icon}
-        </>
-    )
+      </Container>
+    </Container>
+  );
 }
 
 export default TechStacks;

@@ -19,7 +19,7 @@ function Header() {
   const buttonStyle = {
     borderRadius: "20px", // 모서리가 둥근 사각형 모양 버튼
     marginRight: "15px"
-    // 버튼의 색상을 바꿔야됨.
+    // Signup 버튼의 색상만 바꿔야됨 => 귀찮은 부분 | 너무 귀찮으면 안 바꿔도 되고.
   };
 
   return (

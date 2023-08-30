@@ -1,19 +1,15 @@
-import React, { useEffect } from 'react';
-import { Container } from 'react-bootstrap';
-import TypeIt from 'typeit';
+import React, { useEffect } from "react";
+import { Container } from "react-bootstrap";
 
 function Slogan() {
-  useEffect(() => { // 세 번씩 보이는 거 수정해야됨
-    new TypeIt('#slogan-text', {
-      strings: "뭔가 멋있는 맨트입니다",
-      speed: 50, // 타이핑 속도
-      waitUntilVisible: true, // 보여질 때까지 기다리기
-    }).go();
-  }, []);
-
   return (
-    <Container className="d-flex justify-content-center" style={{height:'400px'}}>
-      <h1 id="slogan-text" style={{ margin: 'auto' }}></h1>
+    <Container
+      className="d-flex justify-content-center"
+      style={{ height: "400px" }}
+    >
+      <h1 style={{ margin: "auto" }}>
+        "흑백 배경에 큰따옴표, 대충 아무 글귀나 쓰면 명언같다." (바디1)
+      </h1>
     </Container>
   );
 }
