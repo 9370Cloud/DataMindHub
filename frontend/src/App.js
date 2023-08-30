@@ -1,12 +1,12 @@
 import './App.css';
-import {Button} from 'react-bootstrap'
+import Header from './components/Header';
+import Slogan from './components/Slogan';
 
 function App() {
-
-
   return (
-    <div className="App">
-      <Button variant="danger">123</Button>
+    <div>
+      <Header />
+      <Slogan/>
     </div>
   );
 }
