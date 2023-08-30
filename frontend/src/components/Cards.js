@@ -16,12 +16,11 @@ function Cards() {
         src="https://i.namu.wiki/i/Bbq0E9hXYyrXbL4TnIE__vtQ2QwiZ3i40NZSLiX_a6S0ftYCndVZjf4vlruWur4I3Z0o7CZuFrRMl2CKxyk30w.webp"
       />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>제목 쓰는 곳</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          하 이거 어느세월에 완성하고 배포하냐
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="danger">자폭</Button>
       </Card.Body>
     </Card>
   );

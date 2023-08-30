@@ -1,16 +1,16 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-function Footer(){
+function Body4(){
     return(
-        <Container style={{backgroundColor:'white'}}>
+        <Container style={{backgroundColor:'blue'}}>
 <Container
         className="d-flex justify-content-center align-items-center"
         style={{ height: "100px" }}
       >
-        <h2>페이지 마지막에 주소랑 이름이랑 전화번호 이거저거 있는 파트 (Footer)</h2>
+        <h2>멋있는 자바스크립트 기술이 들어갈 곳 (바디4)</h2>
       </Container>
         </Container>
     )
 }
 
-export default Footer
+export default Body4
