@@ -5,10 +5,13 @@ import Cards from "./Cards";
 import Body4 from "./Body4";
 import { Container } from "react-bootstrap";
 
+import MainSample from "./MainSample";
+
+
 function MainContent() {
   return (
     <Container>
-      <Slogan />
+      <MainSample/>
       <TechStacks />
       <Cards />
       <Body4 />
