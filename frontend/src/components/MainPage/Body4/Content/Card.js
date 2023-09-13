@@ -44,6 +44,59 @@ function Card() {
         </a>
       </li>
 
+      <li class="card">
+        <a class="card-image" href="#">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-500.jpg"
+            alt="dataMindHub"
+          />
+        </a>
+        <a>
+          <h2>Psychopomp</h2>
+          <p>Japanese Breakfast</p>
+        </a>
+      </li>
+
+      <li class="card">
+        <a class="card-image" href="#">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-500.jpg"
+            alt="dataMindHub"
+          />
+        </a>
+        <a>
+          <h2>Psychopomp</h2>
+          <p>Japanese Breakfast</p>
+        </a>
+      </li>
+
+      <li class="card">
+        <a class="card-image" href="#">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-500.jpg"
+            alt="dataMindHub"
+          />
+        </a>
+        <a>
+          <h2>Psychopomp</h2>
+          <p>Japanese Breakfast</p>
+        </a>
+      </li>
+
+      <li class="card">
+        <a class="card-image" href="#">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-500.jpg"
+            alt="dataMindHub"
+          />
+        </a>
+        <a>
+          <h2>Psychopomp</h2>
+          <p>Japanese Breakfast</p>
+        </a>
+      </li>
+
+
     </ul>
   );
 }

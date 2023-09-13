@@ -1,3 +1,10 @@
+.card {
+	display: flex;
+	flex-wrap: wrap; /* Add this line to enable flex wrapping */
+	/* Other CSS properties for your .card class */
+  }
+  
+
 .card-image {
 	display: block;
 	background: #fff center center no-repeat;
