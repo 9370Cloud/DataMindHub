@@ -1,0 +1,54 @@
+@import "./Reset.css";
+
+/* 모든 글자 크기 기본 16px */
+/* padding, margin 기본 0px */
+
+/* 폰트 변경해야됨 */
+
+.NavigationBar {
+  font-weight: 500;
+}
+
+/* Wrapper 안에 들어가는 div는 width 설정할 필요 없음 */
+.Wrapper {
+  width: 100%;
+}
+
+/* 컴퓨터 화면에 적용되는 스타일 */
+@media (min-width: 1024px) {
+  .Wrapper {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+/* 태블릿 화면에 적용되는 스타일 */
+@media (max-width: 1023px) {
+  .Wrapper {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+/* 모바일 화면에 적용되는 스타일 */
+@media (max-width: 768px) {
+}
+
+.Button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px;
+  background-color: #0D0C22;
+  color: white;
+}
+.Button:hover {
+  background-color: #252438;
+}
+.Button.Login {
+  background-color: white;
+  color: #0D0C22;
+}
+.Button.Login:hover {
+  background-color: #e9e9e9;
+}

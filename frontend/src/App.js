@@ -1,16 +1,16 @@
 import './App.css';
-import { Routes, Route, Link } from 'react-router-dom'
-import MainPage from './components/MainPage/MainPage';
-import Header from './components/Header/Header';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <Routes>
-        <Route path='/' element={<MainPage/>}/>
-      </Routes>
-    </div>
+    <>
+      <NavigationBar/>
+      <div className='Wrapper'>
+        <div className='크기보는박스' style={{backgroundColor:'aquamarine'}}>
+          글자 글자 글자 글자 글자 글자 글자 글자 글자 글자 글자 글자
+        </div>
+      </div>
+    </>
   );
 }
 
