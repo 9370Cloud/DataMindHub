@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import LoginModal from "./LoginModal";
 
 function NavigationBar() {
   return (
@@ -30,11 +31,8 @@ function NavigationBar() {
             </Nav>
             <Nav>
               {/* 로그인 전 */}
-              <button className="Button Login" style={{ marginRight: "6px" }}>
-                Login
-              </button>
-              <button className="Button">Sign Up</button>
-
+              <LoginModal/>
+              
               {/* 로그인 후 */}
               <button className="Button" style={{ marginRight: "6px" }}>
                 My Page

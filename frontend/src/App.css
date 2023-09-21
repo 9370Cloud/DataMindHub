@@ -3,13 +3,38 @@
 /* 모든 글자 크기 기본 16px */
 /* padding, margin 기본 0px */
 
+/* 요소간 간격 마진 3%, 섹션 간 간격 마진 15% */
+
 .NavigationBar {
   font-weight: 500;
+  width:100%;
 }
 
 /* Wrapper 안에 들어가는 div는 width 설정할 필요 없음 */
 .Wrapper {
   width: 100%;
+}
+
+.MainPage{
+  padding-top: 15%;
+  text-align: center;
+}
+
+.Title{
+  font-size: 5rem;
+  margin-bottom: 3%;
+}
+
+.Title.Sub{
+  font-size: 1.5rem;
+}
+
+.MainPage-Header{
+  margin-bottom: 15%;
+}
+
+.MainPage-Body1{
+  margin-bottom: 15%;
 }
 
 /* 컴퓨터 화면에 적용되는 스타일 */
@@ -30,6 +55,14 @@
 
 /* 모바일 화면에 적용되는 스타일 */
 @media (max-width: 768px) {
+  .Title{
+    font-size: 3rem;
+    margin-bottom: 6%;
+  }
+  .Title.Sub{
+    font-size: 1rem;
+    margin-bottom: 3%;
+  }
 }
 
 .Button {
