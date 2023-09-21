@@ -7,7 +7,7 @@ function NavigationBar() {
     <div className="NavigationBar">
       <Navbar expand="lg" className="bg-body-white">
         <Container>
-          <Navbar.Brand href="#home">dataMindHub</Navbar.Brand>
+          <Navbar.Brand href="#home" style={{fontWeight:'bold'}}>dataMindHub</Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             style={{ marginBottom: "10px" }}
