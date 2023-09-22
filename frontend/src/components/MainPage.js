@@ -1,9 +1,11 @@
+import Slide from './Slide';
+
 function MainPage() {
   return (
     <div className="MainPage">
       <div className="MainPage-Header">
         <p className="Title">dataMindHub💫</p>
-        <p className="Title Sub">무작정 웹사이트 배포하기</p>
+        <p className="Title Sub">We Realize Your Demands, No Matter What</p>
         <img src="Icons.png" style={{ width: "100%" }} />
       </div>
       <div className="MainPage-Body1">
@@ -15,7 +17,7 @@ function MainPage() {
       </div>
       <div className="MainPage-Body3">
         <p className="Body3 Title">코딩노예들</p>
-        <p>저번에 썼던 code ui 사용할 예정</p>
+        <Slide/>
       </div>
       <div className="MainPage-Body4">
         <p className="Body4 Title">반응형 웹사이트임</p>

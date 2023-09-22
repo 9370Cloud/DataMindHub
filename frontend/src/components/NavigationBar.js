@@ -37,7 +37,7 @@ function NavigationBar() {
               <button className="Button" style={{ marginRight: "6px" }}>
                 My Page
               </button>
-              <button className="Button Login">Logout</button>
+              <button className="Button Login">Log out</button>
             </Nav>
           </Navbar.Collapse>
         </Container>
