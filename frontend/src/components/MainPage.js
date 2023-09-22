@@ -6,7 +6,8 @@ function MainPage() {
       <div className="MainPage-Header">
         <p className="Title">dataMindHub💫</p>
         <p className="Title Sub">We Realize Your Demands, No Matter What</p>
-        <img src="Icons.png" style={{ width: "100%" }} />
+        <img src="Icons.png" style={{ width: "100%" }} alt="TechStacks"/>
+        {/* img 태그는 alt 속성 갖고 있어야 warning 안 뜸  */}
       </div>
       <div className="MainPage-Body1">
         <p className="Body1 Title">Hosting Notion</p>
@@ -16,7 +17,7 @@ function MainPage() {
         <p>노션 아이콘 큰거 + 케러셀:우리 사이트 사용 모습</p>
       </div>
       <div className="MainPage-Body3">
-        <p className="Body3 Title">코딩노예들</p>
+        <p className="Body3 Title">🔥코딩노예들🔥</p>
         <Slide/>
       </div>
       <div className="MainPage-Body4">
