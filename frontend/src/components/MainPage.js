@@ -1,54 +1,46 @@
 import Slide from "./Slide";
 import NotionSVG from "./NotionSVG";
-import { DividerBottom, DividerTop } from "./Divider";
+import Divider from "./Divider";
 
 function MainPage() {
   return (
     <>
-      <div className="MainPage">
-        <div className="MainPage-Header">
-          <NotionSVG />
-          <p className="Title" style={{ fontFamily: "pacifico" }}>
-            Hosting Notion Page
+      <div className="MainPage Header">
+        <NotionSVG />
+        <p className="Title MainPage-Title">
+          First Project : Hosting Notion
+        </p>
+        <p className="MaingPage-Sub Sub">페이지 주소로 바로 포스팅 가능!</p>
+        <p className="MaingPage-Sub2 Sub">진짜냐구요?</p>
+        <button className="Button">Get Started!</button>
+      </div>
+      <div className="MainPage Solution">
+        <p className="Solution-Title Title">Hosting Solution</p>
+        <img src="Solution.png" style={{ width: "100%" }} alt="TechStacks" />
+      </div>
+      <div className="MainPage TechStacks">
+        <p className="Title">Tech Stacks</p>
+        <img src="Icons.png" style={{ width: "100%" }} alt="TechStacks" />
+        {/* img 태그는 alt 속성 갖고 있어야 warning 안 뜸  */}
+        {/* 사진 추후에 업그레이드 할 예정임 */}
+      </div>
+      <div className="MainPage Responsive">
+        <p className="Responsive-Title Title">Responsive Website</p>
+        <p className="Responsive-Sub Sub" style={{fontFamily:'pacifico'}}>PC, Tablet, Mobile anywhere</p>
+        <p className="Sub">궁금하면 다른 기기로 들어와보던지</p>
+      </div>
+
+  
+        <div className="MainPage Members">
+          <p className="Members-Title Title">
+            Le Miserable
           </p>
-          <p className="Sub">노션 페이지 주소만 입력하면 바로 포스트 가능!</p>
-          <p className="Sub">진짜냐구요?</p>
-          <button className="Button">Get Started!</button>
-        </div>
-        <div className="MainPage-Body1">
-          <p className="Title">Hosting Solution</p>
-          <p className="Body1 Title Sub">
-            리엑트 노션 데이터베이스 요청 응답 어쩌고 저쩌고 주저리 주저리...
-            (대강 멋있는 관계도)
-          </p>
-        </div>
-        <div className="MainPage-Body4">
-          <p className="Body3 Title">Tech Stacks</p>
-          <img src="Icons.png" style={{ width: "100%" }} alt="TechStacks" />
-          {/* img 태그는 alt 속성 갖고 있어야 warning 안 뜸  */}
-          {/* 사진 추후에 업그레이드 할 예정임 */}
-        </div>
-        <div className="MainPage-Body5">
-          <p className="Body3 Title">반응형 웹사이트임</p>
-          <p>PC, Tablet, Mobile</p>
-        </div>
+          <p className="Members-Sub Sub">Coding Slaves</p>
+          <Slide />
       </div>
-      <div style={{ backgroundColor: "#0D0C22" }}>
-        <DividerTop />
-      </div>
-      <div style={{ backgroundColor: "#0D0C22", width: "100%" }}>
-        <div className="MainPage" style={{ padding: "0" }}>
-          <div
-            className="MainPage-Body3"
-            style={{ paddingLeft: "15%", paddingRight: "15%" }}
-          >
-            <p className="Title" style={{color:"white"}}>🔥코딩노예들🔥</p>
-            <Slide />
-          </div>
-        </div>
-      </div>
-      <div style={{ backgroundColor: "#0D0C22" }}>
-        <DividerBottom />
+      <Divider/>
+      <div className="Footer">
+        깃헙 아이콘을 비롯한 각종 링크 아이콘
       </div>
     </>
   );
