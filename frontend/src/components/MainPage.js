@@ -105,11 +105,18 @@ function MainPage() {
           className={`target ${isVisible4 ? "visible" : ""}`}
           ref={targetRef4}
         >
-        <Slide />
+          <Slide />
         </div>
       </div>
       <Divider />
-      <div className="Footer">깃헙 아이콘을 비롯한 각종 링크 아이콘</div>
+      <div className="Footer">
+        <div class="glowingIconsContainer">
+          <i class="fa fa-apple" id="apple"></i>
+          <i class="fa fa-twitter" id="twitter"></i>
+          <i class="fa fa-github-square github" id="github"></i>
+          <i class="fa fa-facebook-square" id="facebook"></i>
+        </div>
+      </div>
     </>
   );
 }

@@ -8,7 +8,7 @@ function NavigationBar() {
     <div className="NavigationBar">
       <Navbar expand="lg" className="bg-body-white">
         <Container>
-          <Navbar.Brand href="#home" style={{fontWeight:'300', fontFamily: 'Pacifico'}}>dataMindHub</Navbar.Brand>
+          <Navbar.Brand href="#home" style={{fontWeight:'300', fontFamily: 'Pacifico'}} className="testNeonGlow">dataMindHub</Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             style={{ marginBottom: "10px" }}
@@ -27,6 +27,18 @@ function NavigationBar() {
                 style={{ fontSize: "20px", color: "#0D0C22" }}
               >
                 Post
+              </Nav.Link>
+              <Nav.Link
+                href="#home"
+                style={{ fontSize: "20px", color: "#0D0C22" }}
+              >
+                Donation
+              </Nav.Link>
+              <Nav.Link
+                href="#home"
+                style={{ fontSize: "20px", color: "#0D0C22" }}
+              >
+                404
               </Nav.Link>
             </Nav>
             <Nav>
