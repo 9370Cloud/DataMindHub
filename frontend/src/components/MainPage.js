@@ -1,12 +1,57 @@
 import Slide from "./Slide";
 import NotionSVG from "./NotionSVG";
 import Divider from "./Divider";
+import React, { useState, useEffect, useRef } from 'react';
 
 function MainPage() {
+  const targetRef1 = useRef(null);
+  const targetRef2 = useRef(null);
+  const targetRef3 = useRef(null);
+
+  const [isVisible1, setIsVisible1] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
+  const [isVisible3, setIsVisible3] = useState(false);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.5, // 화면에 50% 이상 보일 때 콜백 실행
+    };
+
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.target === targetRef1.current) {
+          setIsVisible1(entry.isIntersecting);
+        } else if (entry.target === targetRef2.current) {
+          setIsVisible2(entry.isIntersecting);
+        } else if (entry.target === targetRef3.current) {
+          setIsVisible3(entry.isIntersecting);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+    if (targetRef1.current) {
+      observer.observe(targetRef1.current);
+    }
+    if (targetRef2.current) {
+      observer.observe(targetRef2.current);
+    }
+    if (targetRef3.current) {
+      observer.observe(targetRef3.current);
+    }
+
+    // 컴포넌트 언마운트 시 옵저버 해제
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <>
       <div className="MainPage Header">
+        <div className= {`target ${isVisible1 ? 'visible' : ''}`} ref={targetRef1}>
         <NotionSVG />
+        </div>
         <p className="Title MainPage-Title">
           First Project : Hosting Notion
         </p>
@@ -16,13 +61,17 @@ function MainPage() {
       </div>
       <div className="MainPage Solution">
         <p className="Solution-Title Title">Hosting Solution</p>
-        <img src="Solution.png" style={{ width: "100%" }} alt="TechStacks" />
+        <div className= {`target ${isVisible2 ? 'visible' : ''}`} ref={targetRef2}>
+        <img src="Solution.png" style={{ width: "100%" }} alt="Solution" />
+        </div>
       </div>
       <div className="MainPage TechStacks">
         <p className="Title">Tech Stacks</p>
+        <div className= {`target ${isVisible3 ? 'visible' : ''}`} ref={targetRef3}>
         <img src="Icons.png" style={{ width: "100%" }} alt="TechStacks" />
         {/* img 태그는 alt 속성 갖고 있어야 warning 안 뜸  */}
         {/* 사진 추후에 업그레이드 할 예정임 */}
+        </div>
       </div>
       <div className="MainPage Responsive">
         <p className="Responsive-Title Title">Responsive Website</p>

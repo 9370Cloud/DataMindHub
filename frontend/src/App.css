@@ -167,6 +167,17 @@
   padding-top: 10%;
   height: 30vh;
 }
+/*Intersection Observer*/
+.target {
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.target.visible {
+  opacity: 1;
+}
+/*Intersection Observer End*/
+
 
 /*개별 스타일*/
 .MainPage-Title{
