@@ -6,9 +6,7 @@ function App() {
   return (
     <>
       <NavigationBar />
-      <div className="Wrapper">
         <MainPage />
-      </div>
     </>
   );
 }

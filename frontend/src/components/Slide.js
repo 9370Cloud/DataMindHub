@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { ReactDOM } from "react";
 import {
   TiChevronLeftOutline,
   TiChevronRightOutline,
 } from "https://cdn.skypack.dev/react-icons/ti";
+// 버튼 모양 바꿔야됨
 
-const div = <>123</>;
 const MAX_VISIBILITY = 3;
 
 const Card = ({ content }) => <div className="card">{content}</div>;
@@ -46,15 +45,29 @@ const Carousel = ({ children }) => {
   );
 };
 
+const person1 = <>123</>;
+const person2 = <>123</>;
+const person3 = (
+  <>
+    <div style={{textAlign:'center'}}>
+      <p>이름 : 김승혁</p>
+      <p>직업 : 백수</p>
+      <p>취미 : 컴퓨터</p>
+      <p>용돈 받음</p>
+    </div>
+  </>
+);
+const person4 = <>123</>;
+const person5 = <>123</>;
+
 const Slide = () => (
   <div className="SlideWrapper">
-   
     <Carousel>
-      <Card title="123" content={div} />
-      <Card title="123" content={div} />
-      <Card title="123" content={div} />
-      <Card title="123" content={div} />
-      <Card title="123" content={div} />
+      <Card title="123" content={person1} />
+      <Card title="123" content={person2} />
+      <Card title="123" content={person3} />
+      <Card title="123" content={person4} />
+      <Card title="123" content={person5} />
     </Carousel>
   </div>
 );
