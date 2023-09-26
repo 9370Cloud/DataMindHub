@@ -7,7 +7,6 @@ function App() {
     <>
       <NavigationBar />
         <MainPage />
-        {/* 깃허브 테스트하는 중이야 */}
     </>
   );
 }

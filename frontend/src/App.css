@@ -115,41 +115,7 @@
   transform: translateX(50%) translatey(-50%);
 }
 /* 슬라이드 스타일 끝 */
-/* Divider*/
-.custom-shape-divider-top-1695471190 {
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
 
-.custom-shape-divider-top-1695471190 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 198px;
-}
-
-.custom-shape-divider-top-1695471190 .shape-fill {
-  fill: #ffffff;
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .custom-shape-divider-top-1695471190 svg {
-    width: calc(100% + 1.3px);
-    height: 181px;
-  }
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-top-1695471190 svg {
-    width: calc(100% + 1.3px);
-    height: 75px;
-  }
-}
-/* Divider End*/
 
 .Footer {
   background-color: #0d0c22;
@@ -199,12 +165,12 @@
   margin-bottom: 5%;
 }
 .Members-Title {
-  margin-bottom: 1%;
-}
-.Members-Sub {
-  font-family: pacifico;
   margin-bottom: 3%;
 }
+.Members {
+  margin-bottom: 10%;
+}
+
 /* 태블릿 화면에 적용되는 스타일 */
 @media (max-width: 1023px) {
   .MainPage {
@@ -227,9 +193,6 @@
     margin-bottom: 3%;
   }
   .Responsive {
-    margin-bottom: 10%;
-  }
-  .Members {
     margin-bottom: 10%;
   }
 }
@@ -341,16 +304,17 @@
 /*Test Neon GLow*/
 .testNeonGlow {
   animation: neon 1.5s ease-in-out infinite alternate;
+  color:'#fff'
 }
 
 @keyframes neon {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
-      0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
-      0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+      0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
   }
 }
 /*
@@ -417,15 +381,13 @@ from {
  
 6. Purple
 from {
-          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-            0 0 40px #ff9900, 0 0 70px #ff9900, 0 0 80px #ff9900,
-            0 0 100px #ff9900, 0 0 150px #ff9900;
-        }
-        to {
-          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-            0 0 20px #ff9900, 0 0 35px #ff9900, 0 0 40px #ff9900,
-            0 0 50px #ff9900, 0 0 75px #ff9900;
-        }
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+      0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
 */
 
 /*Test Neon End*/

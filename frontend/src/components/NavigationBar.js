@@ -6,9 +6,19 @@ import LoginModal from "./LoginModal";
 function NavigationBar() {
   return (
     <div className="NavigationBar">
-      <Navbar expand="lg" className="bg-body-white">
+      <Navbar
+        expand="lg"
+        className="bg-body-white"
+        style={{ backgroundColor: "#222222" }}
+      >
         <Container>
-          <Navbar.Brand href="#home" style={{fontWeight:'300', fontFamily: 'Pacifico'}} className="testNeonGlow">dataMindHub</Navbar.Brand>
+          <Navbar.Brand
+            href="#home"
+            style={{ fontWeight: "300", color: "#fff", fontFamily: "Pacifico" }}
+            className="testNeonGlow"
+          >
+            dataMindHub
+          </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             style={{ marginBottom: "10px" }}
@@ -18,33 +28,53 @@ function NavigationBar() {
             <Nav className="me-auto">
               <Nav.Link
                 href="#home"
-                style={{ fontSize: "20px", color: "#0D0C22" }}
+                style={{
+                  fontSize: "20px",
+                  color: "#fff",
+                  fontFamily: "Pacifico",
+                }}
+                className="testNeonGlow"
               >
                 Blog
               </Nav.Link>
               <Nav.Link
                 href="#home"
-                style={{ fontSize: "20px", color: "#0D0C22" }}
+                style={{
+                  fontSize: "20px",
+                  color: "#fff",
+                  fontFamily: "Pacifico",
+                }}
+                className="testNeonGlow"
               >
                 Post
               </Nav.Link>
               <Nav.Link
                 href="#home"
-                style={{ fontSize: "20px", color: "#0D0C22" }}
+                style={{
+                  fontSize: "20px",
+                  color: "#fff",
+                  fontFamily: "Pacifico",
+                }}
+                className="testNeonGlow"
               >
                 Donation
               </Nav.Link>
               <Nav.Link
                 href="#home"
-                style={{ fontSize: "20px", color: "#0D0C22" }}
+                style={{
+                  fontSize: "20px",
+                  color: "#fff",
+                  fontFamily: "Pacifico",
+                }}
+                className="testNeonGlow"
               >
-                404
+                NotFound
               </Nav.Link>
             </Nav>
             <Nav>
               {/* 로그인 전 */}
-              <LoginModal/>
-              
+              <LoginModal />
+
               {/* 로그인 후 */}
               <button className="Button" style={{ marginRight: "6px" }}>
                 My Page
