@@ -1,6 +1,5 @@
 import Slide from "./Slide";
 import NotionSVG from "./NotionSVG";
-import Divider from "./Divider";
 import React, { useState, useEffect, useRef } from "react";
 
 function MainPage() {
@@ -99,8 +98,7 @@ function MainPage() {
       </div>
 
       <div className="MainPage Members">
-        <p className="Members-Title Title">Le Miserable</p>
-        <p className="Members-Sub Sub">Coding Slaves</p>
+        <p className="Members-Title Title">Coding Slaves</p>
         <div
           className={`target ${isVisible4 ? "visible" : ""}`}
           ref={targetRef4}
@@ -108,7 +106,6 @@ function MainPage() {
           <Slide />
         </div>
       </div>
-      <Divider />
       <div className="Footer">
         <div class="glowingIconsContainer">
           <i class="fa fa-apple" id="apple"></i>
