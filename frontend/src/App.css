@@ -138,6 +138,29 @@
 }
 /*Intersection Observer End*/
 
+/*My Page Style*/
+.MyPage1{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  display: flex; /* Flexbox 레이아웃 사용 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  flex-wrap: wrap;
+  gap:2%;
+}
+
+.MyPage2{
+  padding-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex; /* Flexbox 레이아웃 사용 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  flex-wrap: wrap;
+  gap:2%;
+}
+
+/* My Page Style End*/
+
 /*개별 스타일*/
 .MainPage-Title {
   margin-top: 3%;
@@ -194,6 +217,15 @@
   }
   .Responsive {
     margin-bottom: 10%;
+  }
+  .MyPage1{
+    padding-top: 15%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .MyPage2{
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
 
@@ -252,6 +284,9 @@
   }
   .Members {
     margin-bottom: 0%;
+  }
+  .MyPageCard{
+    margin-bottom: 5%;
   }
 }
 
