@@ -7,14 +7,14 @@ import {
 
 const MAX_VISIBILITY = 3;
 
-const Card = ({ content }) => <div className="card">{content}</div>;
+const Card = ({ content }) => <div className="card1">{content}</div>;
 
 const Carousel = ({ children }) => {
   const [active, setActive] = useState(2);
   const count = React.Children.count(children);
 
   return (
-    <div className="carousel">
+    <div className="carousel1">
       {active > 0 && (
         <button className="nav left" onClick={() => setActive((i) => i - 1)}>
           <TiChevronLeftOutline />
@@ -22,7 +22,7 @@ const Carousel = ({ children }) => {
       )}
       {React.Children.map(children, (child, i) => (
         <div
-          className="card-container"
+          className="card-container1"
           style={{
             "--active": i === active ? 1 : 0,
             "--offset": (active - i) / 3,

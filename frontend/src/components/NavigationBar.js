@@ -2,20 +2,25 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import LoginModal from "./LoginModal";
+import { useNavigate } from "react-router-dom";
 
 function NavigationBar() {
+
+  let Navigate = useNavigate();
+
   return (
     <div className="NavigationBar">
       <Navbar
         expand="lg"
         className="bg-body-white"
-        style={{ backgroundColor: "#222222" }}
+        
       >
         <Container>
           <Navbar.Brand
-            href="#home"
-            style={{ fontWeight: "300", color: "#fff", fontFamily: "Pacifico" }}
+            style={{ fontWeight: "300", color: "#0d0c22", fontFamily: "Pacifico" }}
             className="testNeonGlow"
+            onClick={(e)=>{e.stopPropagation()
+              Navigate('/')}}
           >
             dataMindHub
           </Navbar.Brand>
@@ -27,56 +32,28 @@ function NavigationBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link
-                href="#home"
                 style={{
                   fontSize: "20px",
-                  color: "#fff",
+                  color: "#0d0c22",
                   fontFamily: "Pacifico",
                 }}
                 className="testNeonGlow"
+                onClick={(e)=>{e.stopPropagation()
+                  Navigate('/list')}}
               >
-                Blog
+                Posts
               </Nav.Link>
-              <Nav.Link
-                href="#home"
-                style={{
-                  fontSize: "20px",
-                  color: "#fff",
-                  fontFamily: "Pacifico",
-                }}
-                className="testNeonGlow"
-              >
-                Post
-              </Nav.Link>
-              <Nav.Link
-                href="#home"
-                style={{
-                  fontSize: "20px",
-                  color: "#fff",
-                  fontFamily: "Pacifico",
-                }}
-                className="testNeonGlow"
-              >
-                Donation
-              </Nav.Link>
-              <Nav.Link
-                href="#home"
-                style={{
-                  fontSize: "20px",
-                  color: "#fff",
-                  fontFamily: "Pacifico",
-                }}
-                className="testNeonGlow"
-              >
-                NotFound
-              </Nav.Link>
+              
+              
             </Nav>
             <Nav>
               {/* 로그인 전 */}
               <LoginModal />
 
               {/* 로그인 후 */}
-              <button className="Button" style={{ marginRight: "6px" }}>
+              <button className="Button" style={{ marginRight: "6px" }}
+              onClick={(e)=>{e.stopPropagation()
+                Navigate('/mypage')}}>
                 My Page
               </button>
               <button className="Button Login">Log out</button>
