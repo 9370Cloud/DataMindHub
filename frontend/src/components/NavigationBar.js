@@ -2,20 +2,24 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import LoginModal from "./LoginModal";
+import { useNavigate } from 'react-router-dom';
 
 function NavigationBar() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="NavigationBar">
       <Navbar
         expand="lg"
         className="bg-body-white"
-        style={{ backgroundColor: "#222222" }}
+        style={{ backgroundColor: "#fff" }}
       >
         <Container>
           <Navbar.Brand
-            href="#home"
-            style={{ fontWeight: "300", color: "#fff", fontFamily: "Pacifico" }}
-            className="testNeonGlow"
+            style={{ fontWeight: "300", color: "#0d0c22", fontFamily: "Pacifico" }}
+            // className="testNeonGlow"
+            onClick={() => navigate('/')}
           >
             dataMindHub
           </Navbar.Brand>
@@ -26,50 +30,30 @@ function NavigationBar() {
           {/* 토글로 전환 시 요소 간 간격이 있으면 좋겠음 */}
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
+              
               <Nav.Link
-                href="#home"
                 style={{
                   fontSize: "20px",
-                  color: "#fff",
+                  color: "#0d0c22",
                   fontFamily: "Pacifico",
                 }}
-                className="testNeonGlow"
-              >
-                Blog
-              </Nav.Link>
-              <Nav.Link
-                href="#home"
-                style={{
-                  fontSize: "20px",
-                  color: "#fff",
-                  fontFamily: "Pacifico",
-                }}
-                className="testNeonGlow"
+                
               >
                 Post
               </Nav.Link>
+
               <Nav.Link
-                href="#home"
                 style={{
                   fontSize: "20px",
-                  color: "#fff",
+                  color: "#0d0c22",
                   fontFamily: "Pacifico",
                 }}
-                className="testNeonGlow"
+                onClick={() => {window.location.href = '/post';}}
               >
-                Donation
+                Post test
               </Nav.Link>
-              <Nav.Link
-                href="#home"
-                style={{
-                  fontSize: "20px",
-                  color: "#fff",
-                  fontFamily: "Pacifico",
-                }}
-                className="testNeonGlow"
-              >
-                NotFound
-              </Nav.Link>
+              
+              
             </Nav>
             <Nav>
               {/* 로그인 전 */}
